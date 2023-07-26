@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <div class="nav">
+                <div class="logo">Logo</div>
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Experience</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="btn"><button>Log-In</button></div>
+            </div>
+            <div class="section_1">
+                <div class="left">
+                    <h1>Mr. Deeraj Saxena</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Asperiores expedita quos eaque commodi laboriosam
+                        voluptate, sequi totam rem, aliquam, optio dolorum
+                        accusantium. Rem ullam sequi animi iusto officiis
+                        voluptas illo consequatur commodi cupiditate? Aliquid
+                        laboriosam dignissimos reiciendis culpa eos soluta
+                        mollitia voluptas iure nesciunt natus.</p>
+                    <button>About...</button>
+                </div>
+                <div class="right">
+                    <div class="img">
+                        <img
+                            src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?cs=srgb&dl=pexels-pixabay-220453.jpg&fm=jpg"
+                            alt>
+                    </div>
+                </div>
+            </div>
+            <div class="section_2">
+                <h1>Contact Us</h1>
+                <div class="box">
+                    <div class="inner_box">
+                        <div class="input">
+                            <label for>First Name</label>
+                            <input type="text"
+                                placeholder="Enter Your First Name...">
+                        </div>
+                        <div class="input">
+                            <label for>Last Name</label>
+                            <input type="text"
+                                placeholder="Enter Your Last Name...">
+                        </div>
+                    </div>
+                    <div class="inner_box">
+                        <div class="input">
+                            <label for>Email I'D</label>
+                            <input type="text"
+                                placeholder="Enter Your email I'D...">
+                        </div>
+                        <div class="input">
+                            <label for>Web-site</label>
+                            <input type="text"
+                                placeholder="Enter Your Web-site URL...">
+                        </div>
+                    </div>
+                    <textarea name id cols="86" rows="7"
+                        placeholder="description...."></textarea>
+                    <button>Submit</button>
+                </div>
+            </div>
+            <div class="section_3">
+                <div class="top">
+                    <div class="item">
+                        <h3>Avyaan Managment pltd.</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor</p>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="item">
+                        <h3>Mr. Deeraj Saxena</h3>
+                        <p><i class="ri-phone-line"></i> +91 8778378278</p>
+                        <p><i class="ri-mail-open-line"></i> demo@email.com</p>
+                        <p><i class="ri-map-pin-line"></i> Lorem ipsum, dolor
+                            sit amet consectetur adipisicing elit. Dolor,
+                            voluptate?</p>
+                    </div>
+                    <div class="item">
+                        <button>Contact & Services</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="bottom">
+                    <div class="icons">
+                        <i class="ri-facebook-fill"></i>
+                        <i class="ri-instagram-line"></i>
+                        <i class="ri-twitter-line"></i>
+                        <i class="ri-linkedin-fill"></i>
+                    </div>
+                    <div class="links">
+                        <a href>Home</a>
+                        <a href>About</a>
+                        <a href>Experiance</a>
+                        <a href>Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+            integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+        var ls = gsap.timeline();
+
+        ls.from('.nav', {
+            y:-20,
+            // scale: 0,
+            duration: 1,
+            opacity: 0
+        }).from('.section_1 .left h1',{
+            x:-200,
+            duration:1,
+            opacity:0
+        }).from('.section_1 .left p',{
+            x:-200,
+            duration:1,
+            opacity:0
+        }).from('.section_1 .left button',{
+            x:-200,
+            duration:1,
+            opacity:0
+        }).from('.section_1 .right .img',{
+            scale:0,
+            duration:.5,
+            opacity:0
+        })
+
+    </script>
+    </body>
+</html>
